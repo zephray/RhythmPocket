@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 7
+Sheet 4 10
 Title "LPDDR2 SDRAM"
 Date ""
 Rev "R0.1"
@@ -427,7 +427,7 @@ Wire Wire Line
 Wire Wire Line
 	5450 2700 6900 2700
 Wire Wire Line
-	4500 5000 5550 5000
+	4500 5000 4950 5000
 Wire Wire Line
 	5550 5000 5550 2800
 Wire Wire Line
@@ -1677,6 +1677,35 @@ Wire Wire Line
 	10200 5800 10200 5900
 Wire Wire Line
 	10550 5800 10200 5800
+Text Notes 4650 5800 0    50   ~ 0
+For LPDDR2,\nDRAM_RESET should be left unconnected\n
+$Comp
+L Device:R R204
+U 1 1 5D1B9D3D
+P 4950 5250
+F 0 "R204" H 5020 5296 50  0000 L CNN
+F 1 "10K" H 5020 5205 50  0000 L CNN
+F 2 "" V 4880 5250 50  0001 C CNN
+F 3 "~" H 4950 5250 50  0001 C CNN
+	1    4950 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4950 5100 4950 5000
+Connection ~ 4950 5000
+Wire Wire Line
+	4950 5000 5550 5000
+$Comp
+L power:GND #PWR?
+U 1 1 5D1D2EB6
+P 4950 5400
+F 0 "#PWR?" H 4950 5150 50  0001 C CNN
+F 1 "GND" H 4955 5227 50  0000 C CNN
+F 2 "" H 4950 5400 50  0001 C CNN
+F 3 "" H 4950 5400 50  0001 C CNN
+	1    4950 5400
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	1600 2000 2900 2000
 Wire Wire Line
