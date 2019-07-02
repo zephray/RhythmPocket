@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 10
+Sheet 5 11
 Title "SPI Flash & TF-Card"
 Date ""
 Rev "R0.1"
@@ -313,7 +313,7 @@ F 3 "~" H 7600 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 7100 2100 0    50   Input ~ 0
-PMIC_STBY_REQ
+SD_PWR_EN
 Wire Wire Line
 	8100 2300 8100 2700
 Wire Wire Line

@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 6 10
+Sheet 6 11
 Title "STN LCD"
 Date ""
 Rev "R0.1"
@@ -604,17 +604,6 @@ Wire Wire Line
 	9500 1100 9400 1100
 Wire Wire Line
 	9400 1100 9400 2900
-$Comp
-L power:+3V3 #PWR?
-U 1 1 5D4C2328
-P 9300 1000
-F 0 "#PWR?" H 9300 850 50  0001 C CNN
-F 1 "+3V3" H 9315 1173 50  0000 C CNN
-F 2 "" H 9300 1000 50  0001 C CNN
-F 3 "" H 9300 1000 50  0001 C CNN
-	1    9300 1000
-	1    0    0    -1  
-$EndComp
 Text Label 8900 1200 0    50   ~ 0
 LCD_CPG
 Text Label 8900 1300 0    50   ~ 0
@@ -860,7 +849,7 @@ F 3 "~" H 4900 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4400 4900 0    50   Input ~ 0
-PMIC_STBY_REQ
+LCD_PWR_EN
 Wire Wire Line
 	4900 4800 4900 4900
 Connection ~ 4900 4900
@@ -1172,7 +1161,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 7000 5800 7100
 Connection ~ 6400 6400
-Text Label 9050 6400 0    50   ~ 0
+Text Label 9050 4950 0    50   ~ 0
 LCD_V1
 Text Notes 6750 6350 0    50   ~ 0
 -15V
@@ -1245,17 +1234,6 @@ $EndComp
 Wire Wire Line
 	9400 6400 7200 6400
 Connection ~ 7200 6400
-$Comp
-L power:GND #PWR?
-U 1 1 5D75F54C
-P 7200 4500
-F 0 "#PWR?" H 7200 4250 50  0001 C CNN
-F 1 "GND" H 7205 4327 50  0000 C CNN
-F 2 "" H 7200 4500 50  0001 C CNN
-F 3 "" H 7200 4500 50  0001 C CNN
-	1    7200 4500
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7200 6050 7200 6000
 Wire Wire Line
@@ -1362,13 +1340,13 @@ Connection ~ 8400 5350
 Wire Wire Line
 	9400 4950 8400 4950
 Connection ~ 8400 4950
-Text Label 9050 6150 0    50   ~ 0
+Text Label 9050 5350 0    50   ~ 0
 LCD_V2
 Text Label 9050 5750 0    50   ~ 0
 LCD_V3
-Text Label 9050 5350 0    50   ~ 0
+Text Label 9050 6150 0    50   ~ 0
 LCD_V4
-Text Label 9050 4950 0    50   ~ 0
+Text Label 9050 6400 0    50   ~ 0
 LCD_V5
 $Comp
 L Amplifier_Operational:LM324 U502
@@ -1390,7 +1368,29 @@ Wire Wire Line
 	6700 5150 6700 4500
 Wire Wire Line
 	6700 4500 7200 4500
-Connection ~ 7200 4500
 Wire Wire Line
 	1400 7300 1600 7300
+$Comp
+L symbols:+3V3_LCD #PWR?
+U 1 1 5D1B9280
+P 6700 4500
+F 0 "#PWR?" H 6700 4350 50  0001 C CNN
+F 1 "+3V3_LCD" H 6715 4673 50  0000 C CNN
+F 2 "" H 6700 4500 50  0001 C CNN
+F 3 "" H 6700 4500 50  0001 C CNN
+	1    6700 4500
+	1    0    0    -1  
+$EndComp
+Connection ~ 6700 4500
+$Comp
+L symbols:+3V3_LCD #PWR?
+U 1 1 5D1B9CC5
+P 9300 1000
+F 0 "#PWR?" H 9300 850 50  0001 C CNN
+F 1 "+3V3_LCD" H 9315 1173 50  0000 C CNN
+F 2 "" H 9300 1000 50  0001 C CNN
+F 3 "" H 9300 1000 50  0001 C CNN
+	1    9300 1000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

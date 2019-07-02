@@ -4,7 +4,7 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 11
 Title "RhythmPocket"
 Date ""
 Rev "R0.1"
@@ -71,14 +71,14 @@ F0 "keypad" 50
 F1 "keypad.sch" 50
 $EndSheet
 $Sheet
-S 1600 4800 2900 200 
+S 1600 5200 2900 200 
 U 5D438456
 F0 "unused" 50
 F1 "unused.sch" 50
 $EndSheet
 Text Notes 1700 4550 0    100  ~ 0
 Keypad
-Text Notes 1700 4950 0    100  ~ 0
+Text Notes 1700 5350 0    100  ~ 0
 Unused IO
 $Sheet
 S 1600 4000 2900 200 
@@ -104,6 +104,16 @@ Text Notes 1300 4550 0    100  ~ 0
 7
 Text Notes 1300 1750 0    100  ~ 0
 0
+Text Notes 1300 5350 0    100  ~ 0
+9
+$Sheet
+S 1600 4800 2900 200 
+U 5D1BA41C
+F0 "wifibt" 50
+F1 "wifibt.sch" 50
+$EndSheet
 Text Notes 1300 4950 0    100  ~ 0
 8
+Text Notes 1700 4950 0    100  ~ 0
+WiFi & BT
 $EndSCHEMATC

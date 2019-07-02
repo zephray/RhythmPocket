@@ -4,13 +4,13 @@ EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 10
+Sheet 1 11
 Title ""
 Date ""
-Rev ""
-Comp ""
-Comment1 ""
-Comment2 ""
+Rev "R0.1"
+Comp "ZephRay"
+Comment1 "zephray@outlook.com"
+Comment2 "www.zephray.me"
 Comment3 ""
 Comment4 ""
 $EndDescr
