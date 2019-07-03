@@ -3,6 +3,7 @@
 *.dcm
 *.bck
 fp-*
+_autosave*
 
 # Xilinx ISE files
 obj_dir/

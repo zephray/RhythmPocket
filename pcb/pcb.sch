@@ -77,7 +77,7 @@ F0 "unused" 50
 F1 "unused.sch" 50
 $EndSheet
 Text Notes 1700 4550 0    100  ~ 0
-Keypad
+Keypad & GPIO
 Text Notes 1700 5350 0    100  ~ 0
 Unused IO
 $Sheet
