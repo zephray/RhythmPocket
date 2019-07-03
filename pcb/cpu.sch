@@ -1023,10 +1023,10 @@ Wire Wire Line
 	8650 1400 9500 1400
 Connection ~ 8650 1400
 $Comp
-L Connector_Generic:Conn_01x06 J100
+L Connector_Generic:Conn_01x06 J102
 U 1 1 5DA9BBD7
 P 10200 3400
-F 0 "J100" H 10280 3392 50  0000 L CNN
+F 0 "J102" H 10280 3392 50  0000 L CNN
 F 1 "Conn_02x05_Odd_Even" H 10280 3301 50  0000 L CNN
 F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical_SMD" H 10200 3400 50  0001 C CNN
 F 3 "~" H 10200 3400 50  0001 C CNN

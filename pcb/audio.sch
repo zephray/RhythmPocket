@@ -871,4 +871,7 @@ Text GLabel 2900 5900 2    50   Output ~ 0
 ADC1_IN0
 Wire Wire Line
 	2550 5900 2900 5900
+Wire Wire Line
+	5000 5700 4900 5700
+Connection ~ 4900 5700
 $EndSCHEMATC
