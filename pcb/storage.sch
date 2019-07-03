@@ -358,7 +358,6 @@ F 3 "~" H 7350 2100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 2100 7200 2100
-NoConn ~ 4400 4600
 NoConn ~ 4400 4700
 NoConn ~ 4400 5500
 NoConn ~ 4400 5600
@@ -950,4 +949,10 @@ F 3 "" H 8400 5000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8400 5000 8400 5100
+Text GLabel 4600 4600 2    50   Output ~ 0
+CCM_CLKO2
+Wire Wire Line
+	4400 4600 4600 4600
+Text Notes 5900 4800 2    50   ~ 0
+Configure as 32kHz clock output
 $EndSCHEMATC

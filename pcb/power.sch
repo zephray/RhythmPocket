@@ -49,4 +49,53 @@ F 3 "" H 5200 8500 50  0001 C CNN
 	10   5200 7800
 	1    0    0    -1  
 $EndComp
+NoConn ~ 3400 2200
+NoConn ~ 3400 2300
+NoConn ~ 3400 3100
+$Comp
+L power:GND #PWR?
+U 1 1 5D1F2E2F
+P 3500 6200
+F 0 "#PWR?" H 3500 5950 50  0001 C CNN
+F 1 "GND" H 3505 6027 50  0000 C CNN
+F 2 "" H 3500 6200 50  0001 C CNN
+F 3 "" H 3500 6200 50  0001 C CNN
+	1    3500 6200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 3300 3500 3300
+Wire Wire Line
+	3500 3300 3500 3400
+Wire Wire Line
+	3400 3400 3500 3400
+Connection ~ 3500 3400
+Wire Wire Line
+	3500 3400 3500 3500
+Wire Wire Line
+	3400 3500 3500 3500
+Connection ~ 3500 3500
+Wire Wire Line
+	3500 3500 3500 4700
+NoConn ~ 3400 4500
+Wire Wire Line
+	3400 4700 3500 4700
+Connection ~ 3500 4700
+Wire Wire Line
+	3500 4700 3500 6200
+Wire Wire Line
+	3400 2500 3500 2500
+Wire Wire Line
+	3500 2500 3500 2600
+Connection ~ 3500 3300
+Wire Wire Line
+	3400 2600 3500 2600
+Connection ~ 3500 2600
+Wire Wire Line
+	3500 2600 3500 2700
+Wire Wire Line
+	3400 2700 3500 2700
+Connection ~ 3500 2700
+Wire Wire Line
+	3500 2700 3500 3300
 $EndSCHEMATC
