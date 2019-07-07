@@ -1,4 +1,4 @@
-update=Friday, July 05, 2019 at 04:51:07 PM
+update=Saturday, July 06, 2019 at 07:34:52 PM
 version=1
 last_client=kicad
 [general]
@@ -64,11 +64,11 @@ Type=0
 Enabled=1
 [pcbnew/Layer.In1.Cu]
 Name=In1.Cu
-Type=0
+Type=1
 Enabled=1
 [pcbnew/Layer.In2.Cu]
 Name=In2.Cu
-Type=0
+Type=1
 Enabled=1
 [pcbnew/Layer.In3.Cu]
 Name=In3.Cu
@@ -227,7 +227,7 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.1
+Clearance=0.0895
 TrackWidth=0.1
 ViaDiameter=0.45
 ViaDrill=0.2
@@ -271,7 +271,7 @@ dPairGap=0.1
 dPairViaGap=0.25
 [pcbnew/Netclasses/4]
 Name=POWER_8MIL
-Clearance=0.1
+Clearance=0.0895
 TrackWidth=0.2
 ViaDiameter=0.45
 ViaDrill=0.2
