@@ -1414,20 +1414,20 @@ Wire Wire Line
 	3200 7400 3400 7400
 Wire Wire Line
 	3200 5400 3400 5400
-Text GLabel 3400 5400 2    50   Input ~ 0
-SW_DN
-Text GLabel 3400 5600 2    50   Input ~ 0
-SW_SE
-Text GLabel 3400 5700 2    50   Input ~ 0
-SW_ST
-Text GLabel 3400 6600 2    50   Input ~ 0
-SW_UP
-Text GLabel 3400 6700 2    50   Input ~ 0
-SW_LE
 Text GLabel 3400 6900 2    50   Input ~ 0
-SW_B
-Text GLabel 3400 7100 2    50   Input ~ 0
-SW_A
+SW_DN
+Text GLabel 3400 6600 2    50   Input ~ 0
+SW_SE
+Text GLabel 3400 6700 2    50   Input ~ 0
+SW_ST
+Text GLabel 3400 5700 2    50   Input ~ 0
+SW_UP
+Text GLabel 3400 5600 2    50   Input ~ 0
+SW_LE
 Text GLabel 3400 7400 2    50   Input ~ 0
+SW_A
+Text GLabel 3400 7100 2    50   Input ~ 0
 SW_RI
+Text GLabel 3400 5400 2    50   Input ~ 0
+SW_B
 $EndSCHEMATC

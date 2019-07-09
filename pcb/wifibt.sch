@@ -139,7 +139,7 @@ F 3 "~" H 6200 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 5700 2200 0    50   Input ~ 0
-LCD_PWR_EN
+BT_PWR_EN
 Wire Wire Line
 	6200 2100 6200 2200
 Connection ~ 6200 2200
@@ -303,7 +303,7 @@ AR Path="/5DB51F59/5D1E5CB8" Ref="R?"  Part="1"
 AR Path="/5D1BA41C/5D1E5CB8" Ref="R802"  Part="1" 
 F 0 "R802" V 4250 5150 50  0000 L CNN
 F 1 "0R" V 4250 5450 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4280 5400 50  0001 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4280 5400 50  0001 C CNN
 F 3 "~" H 4350 5400 50  0001 C CNN
 	1    4350 5400
 	0    1    1    0   

@@ -266,17 +266,6 @@ F 3 "~" H 5650 3700 50  0001 C CNN
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:R R604
-U 1 1 5D1E1E89
-P 5650 4500
-F 0 "R604" V 5600 4750 50  0000 C CNN
-F 1 "200/1%" V 5600 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 4500 50  0001 C CNN
-F 3 "~" H 5650 4500 50  0001 C CNN
-	1    5650 4500
-	0    -1   1    0   
-$EndComp
-$Comp
 L power:GND #PWR0296
 U 1 1 5D1E2A0C
 P 6100 3700
@@ -287,21 +276,6 @@ F 3 "" H 6100 3700 50  0001 C CNN
 	1    6100 3700
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:GND #PWR0297
-U 1 1 5D1E42CE
-P 5900 4500
-F 0 "#PWR0297" H 5900 4250 50  0001 C CNN
-F 1 "GND" H 5905 4327 50  0000 C CNN
-F 2 "" H 5900 4500 50  0001 C CNN
-F 3 "" H 5900 4500 50  0001 C CNN
-	1    5900 4500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5900 4500 5800 4500
-Wire Wire Line
-	5300 4500 5500 4500
 Wire Wire Line
 	5300 3700 5500 3700
 $Comp
@@ -513,17 +487,6 @@ Wire Wire Line
 Wire Wire Line
 	7300 3200 7300 3300
 Connection ~ 8100 3200
-$Comp
-L Connector:USB_A J601
-U 1 1 5D26CBC2
-P 9000 4800
-F 0 "J601" H 8770 4789 50  0000 R CNN
-F 1 "USB_A" H 8770 4698 50  0000 R CNN
-F 2 "Connector_USB:USB_A_Stewart_SS-52100-001_Horizontal" H 9150 4750 50  0001 C CNN
-F 3 " ~" H 9150 4750 50  0001 C CNN
-	1    9000 4800
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5900 1900 5900 2000
 Wire Wire Line
@@ -537,73 +500,9 @@ Wire Wire Line
 	7300 3300 5300 3300
 Wire Wire Line
 	5300 3400 7200 3400
-$Comp
-L Device:R R606
-U 1 1 5D28A3E2
-P 6850 3900
-F 0 "R606" V 6750 3700 50  0000 C CNN
-F 1 "22" V 6750 4100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6780 3900 50  0001 C CNN
-F 3 "~" H 6850 3900 50  0001 C CNN
-	1    6850 3900
-	0    -1   1    0   
-$EndComp
-$Comp
-L Device:R R607
-U 1 1 5D28A3E8
-P 6850 4000
-F 0 "R607" V 6950 3800 50  0000 C CNN
-F 1 "22" V 6950 4200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6780 4000 50  0001 C CNN
-F 3 "~" H 6850 4000 50  0001 C CNN
-	1    6850 4000
-	0    -1   1    0   
-$EndComp
-Wire Wire Line
-	7000 3900 8000 3900
-Wire Wire Line
-	8000 3900 8000 4800
-Wire Wire Line
-	8000 4800 8700 4800
-Wire Wire Line
-	8700 4900 7900 4900
-Wire Wire Line
-	7900 4900 7900 4000
-Wire Wire Line
-	7900 4000 7000 4000
-Wire Wire Line
-	6700 3900 5300 3900
-Wire Wire Line
-	5300 4000 6700 4000
-Wire Wire Line
-	5300 4300 7200 4300
-Wire Wire Line
-	7200 4300 7200 3400
-Connection ~ 7200 3400
 Wire Wire Line
 	7600 2800 8700 2800
-Wire Wire Line
-	7200 4600 7200 4300
-Wire Wire Line
-	7200 4600 8700 4600
-Connection ~ 7200 4300
 NoConn ~ 5300 4200
-$Comp
-L power:GND #PWR0305
-U 1 1 5D29CE39
-P 9100 5300
-F 0 "#PWR0305" H 9100 5050 50  0001 C CNN
-F 1 "GND" H 9105 5127 50  0000 C CNN
-F 2 "" H 9100 5300 50  0001 C CNN
-F 3 "" H 9100 5300 50  0001 C CNN
-	1    9100 5300
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	9100 5300 9100 5200
-Wire Wire Line
-	9000 5200 9100 5200
-Connection ~ 9100 5200
 Text Notes 7000 5800 0    50   ~ 0
 The Type A port is not ESD protected, and only powered if Type B Micro is connected (shared power). \nThis port is meant for development purpose only.
 $Comp
