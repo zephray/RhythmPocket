@@ -103,7 +103,7 @@ Connection ~ 3600 2000
 Wire Wire Line
 	3600 2000 3700 2000
 $Comp
-L Device:R_Pack04 RN500
+L pcb-rescue:R_Pack04-Device RN500
 U 1 1 5D423DF0
 P 5200 1600
 F 0 "RN500" V 4950 1300 50  0000 C CNN
@@ -114,7 +114,7 @@ F 3 "~" H 5200 1600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Pack04 RN501
+L pcb-rescue:R_Pack04-Device RN501
 U 1 1 5D4288BB
 P 5200 2000
 F 0 "RN501" V 4950 1700 50  0000 C CNN
@@ -125,7 +125,7 @@ F 3 "~" H 5200 2000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Pack04 RN503
+L pcb-rescue:R_Pack04-Device RN503
 U 1 1 5D42C7E0
 P 7100 2000
 F 0 "RN503" V 6850 1700 50  0000 C CNN
@@ -228,7 +228,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 2800 6800 2800
 $Comp
-L power:GND #PWR0223
+L pcb-rescue:GND-power #PWR0223
 U 1 1 5D454409
 P 6900 3300
 F 0 "#PWR0223" H 6900 3050 50  0001 C CNN
@@ -253,7 +253,7 @@ Connection ~ 6900 3100
 Wire Wire Line
 	6900 3100 6900 3200
 $Comp
-L Device:C C?
+L pcb-rescue:C-Device C?
 U 1 1 5D47BA54
 P 1400 1050
 AR Path="/5DB2122B/5D47BA54" Ref="C?"  Part="1" 
@@ -266,7 +266,7 @@ F 3 "~" H 1400 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D47BA5A
 P 1400 1300
 AR Path="/5DB2122B/5D47BA5A" Ref="#PWR?"  Part="1" 
@@ -285,7 +285,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 1300 1400 1200
 $Comp
-L power:+1V8 #PWR0231
+L pcb-rescue:+1V8-power #PWR0231
 U 1 1 5D47EFB1
 P 1400 700
 F 0 "#PWR0231" H 1400 550 50  0001 C CNN
@@ -297,7 +297,7 @@ F 3 "" H 1400 700 50  0001 C CNN
 $EndComp
 Connection ~ 1400 700 
 $Comp
-L Device:C C?
+L pcb-rescue:C-Device C?
 U 1 1 5D4808D9
 P 1400 4250
 AR Path="/5DB2122B/5D4808D9" Ref="C?"  Part="1" 
@@ -310,7 +310,7 @@ F 3 "~" H 1400 4250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D4808DF
 P 1400 4500
 AR Path="/5DB2122B/5D4808DF" Ref="#PWR?"  Part="1" 
@@ -329,7 +329,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 4500 1400 4400
 $Comp
-L power:+1V8 #PWR0233
+L pcb-rescue:+1V8-power #PWR0233
 U 1 1 5D4808E8
 P 1400 3900
 F 0 "#PWR0233" H 1400 3750 50  0001 C CNN
@@ -341,7 +341,7 @@ F 3 "" H 1400 3900 50  0001 C CNN
 $EndComp
 Connection ~ 1400 3900
 $Comp
-L Device:C C?
+L pcb-rescue:C-Device C?
 U 1 1 5D483C06
 P 1400 5950
 AR Path="/5DB2122B/5D483C06" Ref="C?"  Part="1" 
@@ -354,7 +354,7 @@ F 3 "~" H 1400 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D483C0C
 P 1400 6200
 AR Path="/5DB2122B/5D483C0C" Ref="#PWR?"  Part="1" 
@@ -373,7 +373,7 @@ Wire Wire Line
 Wire Wire Line
 	1400 6200 1400 6100
 $Comp
-L power:+1V8 #PWR0235
+L pcb-rescue:+1V8-power #PWR0235
 U 1 1 5D483C15
 P 1400 5600
 F 0 "#PWR0235" H 1400 5450 50  0001 C CNN
@@ -385,7 +385,7 @@ F 3 "" H 1400 5600 50  0001 C CNN
 $EndComp
 Connection ~ 1400 5600
 $Comp
-L Device:C C?
+L pcb-rescue:C-Device C?
 U 1 1 5D489120
 P 1400 7450
 AR Path="/5DB2122B/5D489120" Ref="C?"  Part="1" 
@@ -398,7 +398,7 @@ F 3 "~" H 1400 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D489128
 P 1400 7600
 AR Path="/5DB2122B/5D489128" Ref="#PWR?"  Part="1" 
@@ -411,7 +411,7 @@ F 3 "" H 1400 7600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x18 J500
+L pcb-rescue:Conn_01x18-Connector_Generic J500
 U 1 1 5D4BB38B
 P 9600 1600
 F 0 "J500" H 9680 1592 50  0000 L CNN
@@ -422,7 +422,7 @@ F 3 "~" H 9600 1600 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR0237
+L pcb-rescue:GND-power #PWR0237
 U 1 1 5D4BF290
 P 9300 2500
 F 0 "#PWR0237" H 9300 2250 50  0001 C CNN
@@ -522,7 +522,6 @@ NoConn ~ 3200 4700
 NoConn ~ 3200 4800
 NoConn ~ 3200 4900
 NoConn ~ 3200 5000
-NoConn ~ 3200 5100
 NoConn ~ 3200 5200
 NoConn ~ 3200 5300
 NoConn ~ 3200 5800
@@ -565,7 +564,7 @@ Wire Wire Line
 	4600 6100 4500 6100
 Connection ~ 4500 6100
 $Comp
-L Device:C C508
+L pcb-rescue:C-Device C508
 U 1 1 5D5F56B0
 P 4250 6100
 F 0 "C508" V 3998 6100 50  0000 C CNN
@@ -576,7 +575,7 @@ F 3 "~" H 4250 6100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L power:GND #PWR0238
+L pcb-rescue:GND-power #PWR0238
 U 1 1 5D5FB1D3
 P 4000 6100
 F 0 "#PWR0238" H 4000 5850 50  0001 C CNN
@@ -591,7 +590,7 @@ Wire Wire Line
 Wire Wire Line
 	4000 6100 4100 6100
 $Comp
-L power:+3V3 #PWR?
+L pcb-rescue:+3V3-power #PWR?
 U 1 1 5D622DCE
 P 5400 4600
 AR Path="/5DB2122B/5D622DCE" Ref="#PWR?"  Part="1" 
@@ -604,7 +603,7 @@ F 3 "" H 5400 4600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRLML6402 Q?
+L pcb-rescue:IRLML6402-Transistor_FET Q?
 U 1 1 5D622DD4
 P 5300 4900
 AR Path="/5DB2122B/5D622DD4" Ref="Q?"  Part="1" 
@@ -619,7 +618,7 @@ $EndComp
 Wire Wire Line
 	5400 4600 5400 4700
 $Comp
-L Device:R R?
+L pcb-rescue:R-Device R?
 U 1 1 5D622DDB
 P 4900 5150
 AR Path="/5DB2122B/5D622DDB" Ref="R?"  Part="1" 
@@ -632,7 +631,7 @@ F 3 "~" H 4900 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L pcb-rescue:R-Device R?
 U 1 1 5D622DE1
 P 4900 4650
 AR Path="/5DB2122B/5D622DE1" Ref="R?"  Part="1" 
@@ -654,7 +653,7 @@ Wire Wire Line
 Wire Wire Line
 	4900 5000 4900 4900
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D622DED
 P 4900 5300
 AR Path="/5DB2122B/5D622DED" Ref="#PWR?"  Part="1" 
@@ -667,7 +666,7 @@ F 3 "" H 4900 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L pcb-rescue:+3V3-power #PWR?
 U 1 1 5D622DF3
 P 4900 4500
 AR Path="/5DB2122B/5D622DF3" Ref="#PWR?"  Part="1" 
@@ -680,7 +679,7 @@ F 3 "" H 4900 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D?
+L pcb-rescue:D_Schottky-Device D?
 U 1 1 5D622DF9
 P 4650 4900
 AR Path="/5DB2122B/5D622DF9" Ref="D?"  Part="1" 
@@ -718,13 +717,9 @@ Text Label 3700 1200 0    50   ~ 0
 LCD_RESET
 Wire Wire Line
 	4200 1200 3200 1200
-Text Label 4100 6400 0    50   ~ 0
-LCD_RESET
-Wire Wire Line
-	4100 6400 4600 6400
 NoConn ~ 4600 6500
 $Comp
-L Device:R R502
+L pcb-rescue:R-Device R502
 U 1 1 5D672E77
 P 4350 6700
 F 0 "R502" V 4143 6700 50  0000 C CNN
@@ -735,7 +730,7 @@ F 3 "~" H 4350 6700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C509
+L pcb-rescue:C-Device C509
 U 1 1 5D673908
 P 3950 6700
 F 0 "C509" V 3698 6700 50  0000 C CNN
@@ -746,7 +741,7 @@ F 3 "~" H 3950 6700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C510
+L pcb-rescue:C-Device C510
 U 1 1 5D674718
 P 4300 7050
 F 0 "C510" H 4415 7096 50  0000 L CNN
@@ -757,7 +752,7 @@ F 3 "~" H 4300 7050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C511
+L pcb-rescue:C-Device C511
 U 1 1 5D6756DB
 P 6150 5600
 F 0 "C511" V 6100 5450 50  0000 C CNN
@@ -768,7 +763,7 @@ F 3 "~" H 6150 5600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R503
+L pcb-rescue:R-Device R503
 U 1 1 5D675D3D
 P 5800 6250
 F 0 "R503" H 5750 6150 50  0000 R CNN
@@ -779,7 +774,7 @@ F 3 "~" H 5800 6250 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R509
+L pcb-rescue:R-Device R509
 U 1 1 5D67C719
 P 6150 6400
 F 0 "R509" V 6200 6600 50  0000 C CNN
@@ -790,7 +785,7 @@ F 3 "~" H 6150 6400 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C512
+L pcb-rescue:C-Device C512
 U 1 1 5D67D52C
 P 6400 6850
 F 0 "C512" H 6285 6804 50  0000 R CNN
@@ -801,7 +796,7 @@ F 3 "~" H 6400 6850 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:D_Schottky D501
+L pcb-rescue:D_Schottky-Device D501
 U 1 1 5D685CDF
 P 6150 6600
 F 0 "D501" H 5950 6650 50  0000 C CNN
@@ -830,7 +825,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 6600 5800 6600
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D6AFE75
 P 6400 5600
 AR Path="/5DB2122B/5D6AFE75" Ref="#PWR?"  Part="1" 
@@ -845,7 +840,7 @@ $EndComp
 Wire Wire Line
 	6300 5600 6400 5600
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D6B732F
 P 6400 7000
 AR Path="/5DB2122B/5D6B732F" Ref="#PWR?"  Part="1" 
@@ -858,7 +853,7 @@ F 3 "" H 6400 7000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D6B76FB
 P 5600 7200
 AR Path="/5DB2122B/5D6B76FB" Ref="#PWR?"  Part="1" 
@@ -871,7 +866,7 @@ F 3 "" H 5600 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D6B7A0D
 P 4600 7200
 AR Path="/5DB2122B/5D6B7A0D" Ref="#PWR?"  Part="1" 
@@ -884,7 +879,7 @@ F 3 "" H 4600 7200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D6B80FB
 P 3800 6700
 AR Path="/5DB2122B/5D6B80FB" Ref="#PWR?"  Part="1" 
@@ -897,7 +892,7 @@ F 3 "" H 3800 6700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D6B8450
 P 4300 7200
 AR Path="/5DB2122B/5D6B8450" Ref="#PWR?"  Part="1" 
@@ -923,7 +918,7 @@ Wire Wire Line
 	5600 7000 5600 7200
 NoConn ~ 5600 6800
 $Comp
-L Device:L L500
+L pcb-rescue:L-Device L500
 U 1 1 5D6F546B
 P 5800 6850
 F 0 "L500" H 5853 6896 50  0000 L CNN
@@ -934,7 +929,7 @@ F 3 "~" H 5800 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D6F67EF
 P 5800 7100
 AR Path="/5DB2122B/5D6F67EF" Ref="#PWR?"  Part="1" 
@@ -955,7 +950,7 @@ Wire Wire Line
 	5800 7000 5800 7100
 Connection ~ 6400 6400
 $Comp
-L Device:R_POT RV500
+L pcb-rescue:R_POT-Device RV500
 U 1 1 5D72C05F
 P 5800 5800
 F 0 "RV500" H 6250 5650 50  0000 R CNN
@@ -1016,7 +1011,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 6000 7200 6050
 $Comp
-L Device:R R504
+L pcb-rescue:R-Device R504
 U 1 1 5D585916
 P 7200 6250
 F 0 "R504" H 7270 6296 50  0000 L CNN
@@ -1045,9 +1040,11 @@ Wire Wire Line
 Wire Wire Line
 	6700 5750 6700 6400
 $Comp
-L Amplifier_Operational:LM324 U502
+L pcb-rescue:LM324-Amplifier_Operational U502
 U 5 1 5D80D00D
 P 6800 5450
+AR Path="/5D80D00D" Ref="U502"  Part="5" 
+AR Path="/5DB51F59/5D80D00D" Ref="U502"  Part="5" 
 F 0 "U502" H 6758 5496 50  0000 L CNN
 F 1 "LM324" H 6758 5405 50  0000 L CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 6750 5550 50  0001 C CNN
@@ -1111,9 +1108,11 @@ Wire Wire Line
 Wire Wire Line
 	7800 5050 7800 5150
 $Comp
-L Amplifier_Operational:LM324 U502
+L pcb-rescue:LM324-Amplifier_Operational U502
 U 4 1 5D78D689
 P 8100 6150
+AR Path="/5D78D689" Ref="U502"  Part="4" 
+AR Path="/5DB51F59/5D78D689" Ref="U502"  Part="4" 
 F 0 "U502" H 8200 6350 50  0000 C CNN
 F 1 "LM324" H 8200 6250 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8050 6250 50  0001 C CNN
@@ -1122,9 +1121,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 8150 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:LM324 U502
+L pcb-rescue:LM324-Amplifier_Operational U502
 U 3 1 5D78AB11
 P 8100 5750
+AR Path="/5D78AB11" Ref="U502"  Part="3" 
+AR Path="/5DB51F59/5D78AB11" Ref="U502"  Part="3" 
 F 0 "U502" H 8200 5950 50  0000 C CNN
 F 1 "LM324" H 8200 5850 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8050 5850 50  0001 C CNN
@@ -1133,9 +1134,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 8150 5950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:LM324 U502
+L pcb-rescue:LM324-Amplifier_Operational U502
 U 2 1 5D787DB9
 P 8100 5350
+AR Path="/5D787DB9" Ref="U502"  Part="2" 
+AR Path="/5DB51F59/5D787DB9" Ref="U502"  Part="2" 
 F 0 "U502" H 8200 5550 50  0000 C CNN
 F 1 "LM324" H 8200 5450 50  0000 C CNN
 F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 8050 5450 50  0001 C CNN
@@ -1144,9 +1147,11 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm2902-n.pdf" H 8150 5550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Amplifier_Operational:LM324 U502
+L pcb-rescue:LM324-Amplifier_Operational U502
 U 1 1 5D783130
 P 8100 4950
+AR Path="/5D783130" Ref="U502"  Part="1" 
+AR Path="/5DB51F59/5D783130" Ref="U502"  Part="1" 
 F 0 "U502" H 8200 5150 50  0000 C CNN
 F 1 "LM324" H 8200 5050 50  0000 C CNN
 F 2 "Package_SO:TSSOP-14_4.4x5mm_P0.65mm" H 8050 5050 50  0001 C CNN
@@ -1161,7 +1166,7 @@ Wire Wire Line
 Wire Wire Line
 	7200 5700 7200 5650
 $Comp
-L Device:R R508
+L pcb-rescue:R-Device R508
 U 1 1 5D7560C1
 P 7200 4650
 F 0 "R508" H 7270 4696 50  0000 L CNN
@@ -1172,7 +1177,7 @@ F 3 "~" H 7200 4650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R507
+L pcb-rescue:R-Device R507
 U 1 1 5D755DDC
 P 7200 5050
 F 0 "R507" H 7270 5096 50  0000 L CNN
@@ -1183,7 +1188,7 @@ F 3 "~" H 7200 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R505
+L pcb-rescue:R-Device R505
 U 1 1 5D753D04
 P 7200 5850
 F 0 "R505" H 7270 5896 50  0000 L CNN
@@ -1198,7 +1203,7 @@ LCD_V1
 Text Notes 6050 6250 0    50   ~ 0
 -11.6V to -17.8V
 $Comp
-L Device:R R506
+L pcb-rescue:R-Device R506
 U 1 1 5D75597D
 P 7200 5450
 F 0 "R506" H 7270 5496 50  0000 L CNN
@@ -1220,7 +1225,7 @@ F 3 "" H 6200 2300 118 0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+1V8 #PWR0224
+L pcb-rescue:+1V8-power #PWR0224
 U 1 1 5D45A159
 P 5400 2800
 F 0 "#PWR0224" H 5400 2650 50  0001 C CNN
@@ -1231,7 +1236,7 @@ F 3 "" H 5400 2800 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR0225
+L pcb-rescue:+3V3-power #PWR0225
 U 1 1 5D45AD93
 P 4600 2800
 F 0 "#PWR0225" H 4600 2650 50  0001 C CNN
@@ -1250,7 +1255,7 @@ Connection ~ 5400 3000
 Wire Wire Line
 	5400 3000 5400 2800
 $Comp
-L Device:C C500
+L pcb-rescue:C-Device C500
 U 1 1 5D4632AC
 P 5400 3450
 F 0 "C500" H 5515 3496 50  0000 L CNN
@@ -1261,7 +1266,7 @@ F 3 "~" H 5400 3450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C501
+L pcb-rescue:C-Device C501
 U 1 1 5D463E9F
 P 5000 3450
 F 0 "C501" H 5115 3496 50  0000 L CNN
@@ -1272,7 +1277,7 @@ F 3 "~" H 5000 3450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C502
+L pcb-rescue:C-Device C502
 U 1 1 5D46402C
 P 4600 3450
 F 0 "C502" H 4715 3496 50  0000 L CNN
@@ -1283,7 +1288,7 @@ F 3 "~" H 4600 3450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C503
+L pcb-rescue:C-Device C503
 U 1 1 5D464243
 P 4200 3450
 F 0 "C503" H 4315 3496 50  0000 L CNN
@@ -1294,7 +1299,7 @@ F 3 "~" H 4200 3450 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0226
+L pcb-rescue:GND-power #PWR0226
 U 1 1 5D468CD4
 P 5400 3600
 F 0 "#PWR0226" H 5400 3350 50  0001 C CNN
@@ -1305,7 +1310,7 @@ F 3 "" H 5400 3600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0227
+L pcb-rescue:GND-power #PWR0227
 U 1 1 5D46903A
 P 5000 3600
 F 0 "#PWR0227" H 5000 3350 50  0001 C CNN
@@ -1316,7 +1321,7 @@ F 3 "" H 5000 3600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0228
+L pcb-rescue:GND-power #PWR0228
 U 1 1 5D46925D
 P 4600 3600
 F 0 "#PWR0228" H 4600 3350 50  0001 C CNN
@@ -1327,7 +1332,7 @@ F 3 "" H 4600 3600 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0229
+L pcb-rescue:GND-power #PWR0229
 U 1 1 5D4694F7
 P 4200 3600
 F 0 "#PWR0229" H 4200 3350 50  0001 C CNN
@@ -1384,7 +1389,7 @@ Connection ~ 7700 2000
 Wire Wire Line
 	7300 2000 7700 2000
 $Comp
-L Device:R_Pack04 RN502
+L pcb-rescue:R_Pack04-Device RN502
 U 1 1 5D42A1C4
 P 7100 1600
 F 0 "RN502" V 6850 1300 50  0000 C CNN
@@ -1430,4 +1435,13 @@ Text GLabel 3400 7100 2    50   Input ~ 0
 SW_RI
 Text GLabel 3400 5400 2    50   Input ~ 0
 SW_B
+Text GLabel 3400 5100 2    50   Input ~ 0
+HOLD
+Wire Wire Line
+	3200 5100 3400 5100
+Wire Wire Line
+	4500 6200 4500 6400
+Wire Wire Line
+	4500 6400 4600 6400
+Connection ~ 4500 6200
 $EndSCHEMATC

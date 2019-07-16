@@ -26,7 +26,7 @@ F 3 "" H 5800 4100 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C800
+L pcb-rescue:C-Device C800
 U 1 1 5D1C38FE
 P 6700 3450
 F 0 "C800" H 6815 3496 50  0000 L CNN
@@ -37,7 +37,7 @@ F 3 "~" H 6700 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C801
+L pcb-rescue:C-Device C801
 U 1 1 5D1C53ED
 P 7200 3450
 F 0 "C801" H 7315 3496 50  0000 L CNN
@@ -48,7 +48,7 @@ F 3 "~" H 7200 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C802
+L pcb-rescue:C-Device C802
 U 1 1 5D1C595A
 P 7700 3450
 F 0 "C802" H 7815 3496 50  0000 L CNN
@@ -59,7 +59,7 @@ F 3 "~" H 7700 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C803
+L pcb-rescue:C-Device C803
 U 1 1 5D1C5D04
 P 8200 3450
 F 0 "C803" H 8315 3496 50  0000 L CNN
@@ -70,7 +70,7 @@ F 3 "~" H 8200 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0306
+L pcb-rescue:GND-power #PWR0306
 U 1 1 5D1C6F63
 P 7700 3700
 F 0 "#PWR0306" H 7700 3450 50  0001 C CNN
@@ -81,7 +81,7 @@ F 3 "" H 7700 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L pcb-rescue:+3V3-power #PWR?
 U 1 1 5D1E0260
 P 6700 1900
 AR Path="/5DB2122B/5D1E0260" Ref="#PWR?"  Part="1" 
@@ -95,7 +95,7 @@ F 3 "" H 6700 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_FET:IRLML6402 Q?
+L pcb-rescue:IRLML6402-Transistor_FET Q?
 U 1 1 5D1E0266
 P 6600 2200
 AR Path="/5DB2122B/5D1E0266" Ref="Q?"  Part="1" 
@@ -111,7 +111,7 @@ $EndComp
 Wire Wire Line
 	6700 1900 6700 2000
 $Comp
-L Device:R R?
+L pcb-rescue:R-Device R?
 U 1 1 5D1E026D
 P 6200 2450
 AR Path="/5DB2122B/5D1E026D" Ref="R?"  Part="1" 
@@ -125,7 +125,7 @@ F 3 "~" H 6200 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R?
+L pcb-rescue:R-Device R?
 U 1 1 5D1E0273
 P 6200 1950
 AR Path="/5DB2122B/5D1E0273" Ref="R?"  Part="1" 
@@ -148,7 +148,7 @@ Wire Wire Line
 Wire Wire Line
 	6200 2300 6200 2200
 $Comp
-L power:GND #PWR?
+L pcb-rescue:GND-power #PWR?
 U 1 1 5D1E027E
 P 6200 2600
 AR Path="/5DB2122B/5D1E027E" Ref="#PWR?"  Part="1" 
@@ -162,7 +162,7 @@ F 3 "" H 6200 2600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3V3 #PWR?
+L pcb-rescue:+3V3-power #PWR?
 U 1 1 5D1E0284
 P 6200 1800
 AR Path="/5DB2122B/5D1E0284" Ref="#PWR?"  Part="1" 
@@ -176,7 +176,7 @@ F 3 "" H 6200 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:D_Schottky D?
+L pcb-rescue:D_Schottky-Device D?
 U 1 1 5D1E028A
 P 5950 2200
 AR Path="/5DB2122B/5D1E028A" Ref="D?"  Part="1" 
@@ -227,7 +227,7 @@ Wire Wire Line
 	8200 3600 7700 3600
 Connection ~ 7700 3600
 $Comp
-L power:GND #PWR0310
+L pcb-rescue:GND-power #PWR0310
 U 1 1 5D1C677C
 P 6700 3700
 F 0 "#PWR0310" H 6700 3450 50  0001 C CNN
@@ -238,7 +238,7 @@ F 3 "" H 6700 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0311
+L pcb-rescue:GND-power #PWR0311
 U 1 1 5D1E38E1
 P 6500 3900
 F 0 "#PWR0311" H 6500 3650 50  0001 C CNN
@@ -273,7 +273,7 @@ Connection ~ 6500 3500
 Wire Wire Line
 	6500 3500 6500 3600
 $Comp
-L Device:C C804
+L pcb-rescue:C-Device C804
 U 1 1 5D1E5233
 P 4850 5400
 F 0 "C804" V 4750 5200 50  0000 C CNN
@@ -284,7 +284,7 @@ F 3 "~" H 4850 5400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C805
+L pcb-rescue:C-Device C805
 U 1 1 5D1E5893
 P 4600 5650
 F 0 "C805" H 4485 5604 50  0000 R CNN
@@ -295,7 +295,7 @@ F 3 "~" H 4600 5650 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L Device:R R?
+L pcb-rescue:R-Device R?
 U 1 1 5D1E5CB8
 P 4350 5400
 AR Path="/5DB2122B/5D1E5CB8" Ref="R?"  Part="1" 
@@ -309,7 +309,7 @@ F 3 "~" H 4350 5400 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C806
+L pcb-rescue:C-Device C806
 U 1 1 5D1E62F9
 P 4100 5650
 F 0 "C806" H 3985 5604 50  0000 R CNN
@@ -331,7 +331,7 @@ F 3 "" H 3300 5500 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0312
+L pcb-rescue:GND-power #PWR0312
 U 1 1 5D1EA804
 P 3700 5600
 F 0 "#PWR0312" H 3700 5350 50  0001 C CNN
@@ -342,7 +342,7 @@ F 3 "" H 3700 5600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0313
+L pcb-rescue:GND-power #PWR0313
 U 1 1 5D1EAE49
 P 4100 5900
 F 0 "#PWR0313" H 4100 5650 50  0001 C CNN
@@ -353,7 +353,7 @@ F 3 "" H 4100 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0314
+L pcb-rescue:GND-power #PWR0314
 U 1 1 5D1EB029
 P 4600 5900
 F 0 "#PWR0314" H 4600 5650 50  0001 C CNN
@@ -364,7 +364,7 @@ F 3 "" H 4600 5900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR0315
+L pcb-rescue:GND-power #PWR0315
 U 1 1 5D1EB239
 P 5100 5600
 F 0 "#PWR0315" H 5100 5350 50  0001 C CNN
@@ -461,7 +461,7 @@ Wire Wire Line
 Wire Wire Line
 	4700 3800 5200 3800
 $Comp
-L Device:R R?
+L pcb-rescue:R-Device R?
 U 1 1 5D20325E
 P 5100 2850
 AR Path="/5DB2122B/5D20325E" Ref="R?"  Part="1" 
