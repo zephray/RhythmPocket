@@ -1,11 +1,31 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# pcb-rescue_+1V0-power
+# Device_CP
 #
-DEF pcb-rescue_+1V0-power #PWR 0 0 Y Y 1 F P
+DEF Device_CP C 0 10 N Y 1 F N
+F0 "C" 25 100 50 H V L CNN
+F1 "Device_CP" 25 -100 50 H V L CNN
+F2 "" 38 -150 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ CP_*
+$ENDFPLIST
+DRAW
+S -90 20 90 40 0 1 0 N
+S 90 -20 -90 -40 0 1 0 F
+P 2 0 1 0 -70 90 -30 90 N
+P 2 0 1 0 -50 110 -50 70 N
+X ~ 1 0 150 110 D 50 50 1 1 P
+X ~ 2 0 -150 110 U 50 50 1 1 P
+ENDDRAW
+ENDDEF
+#
+# pcb-rescue_+1V0-power-pcb-rescue
+#
+DEF pcb-rescue_+1V0-power-pcb-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pcb-rescue_+1V0-power" 0 140 50 H V C CNN
+F1 "pcb-rescue_+1V0-power-pcb-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +36,11 @@ X +1V0 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_+1V2-power
+# pcb-rescue_+1V2-power-pcb-rescue
 #
-DEF pcb-rescue_+1V2-power #PWR 0 0 Y Y 1 F P
+DEF pcb-rescue_+1V2-power-pcb-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pcb-rescue_+1V2-power" 0 140 50 H V C CNN
+F1 "pcb-rescue_+1V2-power-pcb-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -31,11 +51,11 @@ X +1V2 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_+1V8-power
+# pcb-rescue_+1V8-power-pcb-rescue
 #
-DEF pcb-rescue_+1V8-power #PWR 0 0 Y Y 1 F P
+DEF pcb-rescue_+1V8-power-pcb-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pcb-rescue_+1V8-power" 0 140 50 H V C CNN
+F1 "pcb-rescue_+1V8-power-pcb-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -46,11 +66,11 @@ X +1V8 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_+3V3-power
+# pcb-rescue_+3V3-power-pcb-rescue
 #
-DEF pcb-rescue_+3V3-power #PWR 0 0 Y Y 1 F P
+DEF pcb-rescue_+3V3-power-pcb-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pcb-rescue_+3V3-power" 0 140 50 H V C CNN
+F1 "pcb-rescue_+3V3-power-pcb-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -61,11 +81,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_+BATT-power
+# pcb-rescue_+BATT-power-pcb-rescue
 #
-DEF pcb-rescue_+BATT-power #PWR 0 0 Y Y 1 F P
+DEF pcb-rescue_+BATT-power-pcb-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pcb-rescue_+BATT-power" 0 140 50 H V C CNN
+F1 "pcb-rescue_+BATT-power-pcb-rescue" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -76,11 +96,11 @@ X +BATT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_ADP7142AUZJ-Regulator_Linear
+# pcb-rescue_ADP7142AUZJ-Regulator_Linear-pcb-rescue
 #
-DEF pcb-rescue_ADP7142AUZJ-Regulator_Linear U 0 40 Y Y 1 F N
+DEF pcb-rescue_ADP7142AUZJ-Regulator_Linear-pcb-rescue U 0 40 Y Y 1 F N
 F0 "U" 0 350 50 H V C TNN
-F1 "pcb-rescue_ADP7142AUZJ-Regulator_Linear" 0 250 50 H V C CNN
+F1 "pcb-rescue_ADP7142AUZJ-Regulator_Linear-pcb-rescue" 0 250 50 H V C CNN
 F2 "Package_TO_SOT_SMD:TSOT-23-5" 0 -400 50 H I C CIN
 F3 "" 0 -500 50 H I C CNN
 $FPLIST
@@ -96,11 +116,11 @@ X VOUT 5 400 100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_AP2112K-1.8-Regulator_Linear
+# pcb-rescue_AP2112K-1.8-Regulator_Linear-pcb-rescue
 #
-DEF pcb-rescue_AP2112K-1.8-Regulator_Linear U 0 10 Y Y 1 F N
+DEF pcb-rescue_AP2112K-1.8-Regulator_Linear-pcb-rescue U 0 10 Y Y 1 F N
 F0 "U" -200 225 50 H V L CNN
-F1 "pcb-rescue_AP2112K-1.8-Regulator_Linear" 0 225 50 H V L CNN
+F1 "pcb-rescue_AP2112K-1.8-Regulator_Linear-pcb-rescue" 0 225 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23-5" 0 325 50 H I C CNN
 F3 "" 0 100 50 H I C CNN
 $FPLIST
@@ -116,11 +136,11 @@ X VOUT 5 300 100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_AP2127K-3.0-Regulator_Linear
+# pcb-rescue_AP2127K-3.0-Regulator_Linear-pcb-rescue
 #
-DEF pcb-rescue_AP2127K-3.0-Regulator_Linear U 0 10 Y Y 1 F N
+DEF pcb-rescue_AP2127K-3.0-Regulator_Linear-pcb-rescue U 0 10 Y Y 1 F N
 F0 "U" -200 225 50 H V L CNN
-F1 "pcb-rescue_AP2127K-3.0-Regulator_Linear" 0 225 50 H V L CNN
+F1 "pcb-rescue_AP2127K-3.0-Regulator_Linear-pcb-rescue" 0 225 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23-5" 0 325 50 H I C CNN
 F3 "" 0 100 50 H I C CNN
 $FPLIST
@@ -136,11 +156,11 @@ X VOUT 5 300 100 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_ASE-xxxMHz-Oscillator
+# pcb-rescue_ASE-xxxMHz-Oscillator-pcb-rescue
 #
-DEF pcb-rescue_ASE-xxxMHz-Oscillator X 0 10 Y Y 1 F N
+DEF pcb-rescue_ASE-xxxMHz-Oscillator-pcb-rescue X 0 10 Y Y 1 F N
 F0 "X" -200 250 50 H V L CNN
-F1 "pcb-rescue_ASE-xxxMHz-Oscillator" 50 -250 50 H V L CNN
+F1 "pcb-rescue_ASE-xxxMHz-Oscillator-pcb-rescue" 50 -250 50 H V L CNN
 F2 "Oscillator:Oscillator_SMD_Abracon_ASE-4Pin_3.2x2.5mm" 700 -350 50 H I C CNN
 F3 "" -100 0 50 H I C CNN
 $FPLIST
@@ -156,11 +176,11 @@ X Vdd 4 0 300 100 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_AudioJack3_SwitchTR-Connector
+# pcb-rescue_AudioJack3_SwitchTR-Connector-pcb-rescue
 #
-DEF pcb-rescue_AudioJack3_SwitchTR-Connector J 0 20 Y Y 1 F N
+DEF pcb-rescue_AudioJack3_SwitchTR-Connector-pcb-rescue J 0 20 Y Y 1 F N
 F0 "J" 0 350 50 H V C CNN
-F1 "pcb-rescue_AudioJack3_SwitchTR-Connector" 0 250 50 H V C CNN
+F1 "pcb-rescue_AudioJack3_SwitchTR-Connector-pcb-rescue" 0 250 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -184,11 +204,11 @@ X ~ TN 200 -300 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_Battery-Device
+# pcb-rescue_Battery-Device-pcb-rescue
 #
-DEF pcb-rescue_Battery-Device BT 0 0 N N 1 F N
+DEF pcb-rescue_Battery-Device-pcb-rescue BT 0 0 N N 1 F N
 F0 "BT" 100 100 50 H V L CNN
-F1 "pcb-rescue_Battery-Device" 100 0 50 H V L CNN
+F1 "pcb-rescue_Battery-Device-pcb-rescue" 100 0 50 H V L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
@@ -209,11 +229,11 @@ X - 2 0 -200 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_Battery_Cell-Device
+# pcb-rescue_Battery_Cell-Device-pcb-rescue
 #
-DEF pcb-rescue_Battery_Cell-Device BT 0 0 N N 1 F N
+DEF pcb-rescue_Battery_Cell-Device-pcb-rescue BT 0 0 N N 1 F N
 F0 "BT" 100 100 50 H V L CNN
-F1 "pcb-rescue_Battery_Cell-Device" 100 0 50 H V L CNN
+F1 "pcb-rescue_Battery_Cell-Device-pcb-rescue" 100 0 50 H V L CNN
 F2 "" 0 60 50 V I C CNN
 F3 "" 0 60 50 V I C CNN
 DRAW
@@ -228,11 +248,11 @@ X - 2 0 -100 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_C-Device
+# pcb-rescue_C-Device-pcb-rescue
 #
-DEF pcb-rescue_C-Device C 0 10 N Y 1 F N
+DEF pcb-rescue_C-Device-pcb-rescue C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "pcb-rescue_C-Device" 25 -100 50 H V L CNN
+F1 "pcb-rescue_C-Device-pcb-rescue" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -246,11 +266,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_Conn_01x06-Connector_Generic
+# pcb-rescue_Conn_01x06-Connector_Generic-pcb-rescue
 #
-DEF pcb-rescue_Conn_01x06-Connector_Generic J 0 40 Y N 1 F N
+DEF pcb-rescue_Conn_01x06-Connector_Generic-pcb-rescue J 0 40 Y N 1 F N
 F0 "J" 0 300 50 H V C CNN
-F1 "pcb-rescue_Conn_01x06-Connector_Generic" 0 -400 50 H V C CNN
+F1 "pcb-rescue_Conn_01x06-Connector_Generic-pcb-rescue" 0 -400 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -273,11 +293,11 @@ X Pin_6 6 -200 -300 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_Conn_01x18-Connector_Generic
+# pcb-rescue_Conn_01x18-Connector_Generic-pcb-rescue
 #
-DEF pcb-rescue_Conn_01x18-Connector_Generic J 0 40 Y N 1 F N
+DEF pcb-rescue_Conn_01x18-Connector_Generic-pcb-rescue J 0 40 Y N 1 F N
 F0 "J" 0 900 50 H V C CNN
-F1 "pcb-rescue_Conn_01x18-Connector_Generic" 0 -1000 50 H V C CNN
+F1 "pcb-rescue_Conn_01x18-Connector_Generic-pcb-rescue" 0 -1000 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -324,11 +344,11 @@ X Pin_9 9 -200 0 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_Conn_02x05_Odd_Even-Connector_Generic
+# pcb-rescue_Conn_02x05_Odd_Even-Connector_Generic-pcb-rescue
 #
-DEF pcb-rescue_Conn_02x05_Odd_Even-Connector_Generic J 0 40 Y N 1 F N
+DEF pcb-rescue_Conn_02x05_Odd_Even-Connector_Generic-pcb-rescue J 0 40 Y N 1 F N
 F0 "J" 50 300 50 H V C CNN
-F1 "pcb-rescue_Conn_02x05_Odd_Even-Connector_Generic" 50 -300 50 H V C CNN
+F1 "pcb-rescue_Conn_02x05_Odd_Even-Connector_Generic-pcb-rescue" 50 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -359,11 +379,11 @@ X Pin_9 9 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_Crystal-Device
+# pcb-rescue_Crystal-Device-pcb-rescue
 #
-DEF pcb-rescue_Crystal-Device Y 0 40 N N 1 F N
+DEF pcb-rescue_Crystal-Device-pcb-rescue Y 0 40 N N 1 F N
 F0 "Y" 0 150 50 H V C CNN
-F1 "pcb-rescue_Crystal-Device" 0 -150 50 H V C CNN
+F1 "pcb-rescue_Crystal-Device-pcb-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -380,11 +400,11 @@ X 2 2 150 0 50 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_Crystal_GND24-Device
+# pcb-rescue_Crystal_GND24-Device-pcb-rescue
 #
-DEF pcb-rescue_Crystal_GND24-Device Y 0 40 Y N 1 F N
+DEF pcb-rescue_Crystal_GND24-Device-pcb-rescue Y 0 40 Y N 1 F N
 F0 "Y" 125 200 50 H V L CNN
-F1 "pcb-rescue_Crystal_GND24-Device" 125 125 50 H V L CNN
+F1 "pcb-rescue_Crystal_GND24-Device-pcb-rescue" 125 125 50 H V L CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -407,11 +427,11 @@ X 4 4 0 -200 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_D_Schottky-Device
+# pcb-rescue_D_Schottky-Device-pcb-rescue
 #
-DEF pcb-rescue_D_Schottky-Device D 0 40 N N 1 F N
+DEF pcb-rescue_D_Schottky-Device-pcb-rescue D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "pcb-rescue_D_Schottky-Device" 0 -100 50 H V C CNN
+F1 "pcb-rescue_D_Schottky-Device-pcb-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -429,33 +449,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_D_Shockley-Device
+# pcb-rescue_D_TVS-Device-pcb-rescue
 #
-DEF pcb-rescue_D_Shockley-Device D 0 40 N N 1 F N
+DEF pcb-rescue_D_TVS-Device-pcb-rescue D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "pcb-rescue_D_Shockley-Device" 0 -100 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- TO-???*
- *_Diode_*
- *SingleDiode*
- D_*
-$ENDFPLIST
-DRAW
-P 2 0 1 0 -50 0 50 0 N
-P 2 0 1 8 -50 50 -50 -50 N
-P 3 0 1 8 -50 0 50 50 50 -50 N
-X K 1 -150 0 100 R 50 50 1 1 P
-X A 2 150 0 100 L 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# pcb-rescue_D_TVS-Device
-#
-DEF pcb-rescue_D_TVS-Device D 0 40 N N 1 F N
-F0 "D" 0 100 50 H V C CNN
-F1 "pcb-rescue_D_TVS-Device" 0 -100 50 H V C CNN
+F1 "pcb-rescue_D_TVS-Device-pcb-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -474,11 +472,11 @@ X A2 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_GND-power
+# pcb-rescue_GND-power-pcb-rescue
 #
-DEF pcb-rescue_GND-power #PWR 0 0 Y Y 1 F P
+DEF pcb-rescue_GND-power-pcb-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "pcb-rescue_GND-power" 0 -150 50 H V C CNN
+F1 "pcb-rescue_GND-power-pcb-rescue" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -487,11 +485,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_IRLML6402-Transistor_FET
+# pcb-rescue_IRLML6402-Transistor_FET-pcb-rescue
 #
-DEF pcb-rescue_IRLML6402-Transistor_FET Q 0 0 Y N 1 F N
+DEF pcb-rescue_IRLML6402-Transistor_FET-pcb-rescue Q 0 0 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "pcb-rescue_IRLML6402-Transistor_FET" 200 0 50 H V L CNN
+F1 "pcb-rescue_IRLML6402-Transistor_FET-pcb-rescue" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_SMD:SOT-23" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -522,11 +520,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_L-Device
+# pcb-rescue_L-Device-pcb-rescue
 #
-DEF pcb-rescue_L-Device L 0 40 N N 1 F N
+DEF pcb-rescue_L-Device-pcb-rescue L 0 40 N N 1 F N
 F0 "L" -50 0 50 V V C CNN
-F1 "pcb-rescue_L-Device" 75 0 50 V V C CNN
+F1 "pcb-rescue_L-Device-pcb-rescue" 75 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -545,11 +543,11 @@ X 2 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_LED-Device
+# pcb-rescue_LED-Device-pcb-rescue
 #
-DEF pcb-rescue_LED-Device D 0 40 N N 1 F N
+DEF pcb-rescue_LED-Device-pcb-rescue D 0 40 N N 1 F N
 F0 "D" 0 100 50 H V C CNN
-F1 "pcb-rescue_LED-Device" 0 -100 50 H V C CNN
+F1 "pcb-rescue_LED-Device-pcb-rescue" 0 -100 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -568,11 +566,11 @@ X A 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_LM324-Amplifier_Operational
+# pcb-rescue_LM324-Amplifier_Operational-pcb-rescue
 #
-DEF pcb-rescue_LM324-Amplifier_Operational U 0 5 Y Y 5 L N
+DEF pcb-rescue_LM324-Amplifier_Operational-pcb-rescue U 0 5 Y Y 5 L N
 F0 "U" 0 200 50 H V L CNN
-F1 "pcb-rescue_LM324-Amplifier_Operational" 0 -200 50 H V L CNN
+F1 "pcb-rescue_LM324-Amplifier_Operational-pcb-rescue" 0 -200 50 H V L CNN
 F2 "" -50 100 50 H I C CNN
 F3 "" 50 200 50 H I C CNN
 $FPLIST
@@ -604,11 +602,11 @@ X V+ 4 -100 300 150 D 50 50 5 1 W
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_Q_NMOS_SGD-Device
+# pcb-rescue_Q_NMOS_SGD-Device-pcb-rescue
 #
-DEF pcb-rescue_Q_NMOS_SGD-Device Q 0 0 Y N 1 F N
+DEF pcb-rescue_Q_NMOS_SGD-Device-pcb-rescue Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "pcb-rescue_Q_NMOS_SGD-Device" 200 -50 50 H V L CNN
+F1 "pcb-rescue_Q_NMOS_SGD-Device-pcb-rescue" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -636,11 +634,11 @@ X D 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_R-Device
+# pcb-rescue_R-Device-pcb-rescue
 #
-DEF pcb-rescue_R-Device R 0 0 N Y 1 F N
+DEF pcb-rescue_R-Device-pcb-rescue R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "pcb-rescue_R-Device" 0 0 50 V V C CNN
+F1 "pcb-rescue_R-Device-pcb-rescue" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -653,11 +651,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_R_POT-Device
+# pcb-rescue_R_POT-Device-pcb-rescue
 #
-DEF pcb-rescue_R_POT-Device RV 0 40 Y N 1 F N
+DEF pcb-rescue_R_POT-Device-pcb-rescue RV 0 40 Y N 1 F N
 F0 "RV" -175 0 50 V V C CNN
-F1 "pcb-rescue_R_POT-Device" -100 0 50 V V C CNN
+F1 "pcb-rescue_R_POT-Device-pcb-rescue" -100 0 50 V V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -673,11 +671,11 @@ X 3 3 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_R_Pack04-Device
+# pcb-rescue_R_Pack04-Device-pcb-rescue
 #
-DEF pcb-rescue_R_Pack04-Device RN 0 0 Y N 1 F N
+DEF pcb-rescue_R_Pack04-Device-pcb-rescue RN 0 0 Y N 1 F N
 F0 "RN" -300 0 50 V V C CNN
-F1 "pcb-rescue_R_Pack04-Device" 200 0 50 V V C CNN
+F1 "pcb-rescue_R_Pack04-Device-pcb-rescue" 200 0 50 V V C CNN
 F2 "" 275 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -709,11 +707,11 @@ X R1.2 8 -200 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_SW_Push-Switch
+# pcb-rescue_SW_Push-Switch-pcb-rescue
 #
-DEF pcb-rescue_SW_Push-Switch SW 0 40 N N 1 F N
+DEF pcb-rescue_SW_Push-Switch-pcb-rescue SW 0 40 N N 1 F N
 F0 "SW" 50 100 50 H V L CNN
-F1 "pcb-rescue_SW_Push-Switch" 0 -60 50 H V C CNN
+F1 "pcb-rescue_SW_Push-Switch-pcb-rescue" 0 -60 50 H V C CNN
 F2 "" 0 200 50 H I C CNN
 F3 "" 0 200 50 H I C CNN
 DRAW
@@ -726,11 +724,11 @@ X 2 2 200 0 100 L 50 50 0 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_SW_SP3T-Switch
+# pcb-rescue_SW_SP3T-Switch-pcb-rescue
 #
-DEF pcb-rescue_SW_SP3T-Switch SW 0 0 Y N 1 F N
+DEF pcb-rescue_SW_SP3T-Switch-pcb-rescue SW 0 0 Y N 1 F N
 F0 "SW" 0 200 50 H V C CNN
-F1 "pcb-rescue_SW_SP3T-Switch" 0 -200 50 H V C CNN
+F1 "pcb-rescue_SW_SP3T-Switch-pcb-rescue" 0 -200 50 H V C CNN
 F2 "" -625 175 50 H I C CNN
 F3 "" -625 175 50 H I C CNN
 $FPLIST
@@ -750,11 +748,11 @@ X 4 4 200 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_USBLC6-2SC6-Power_Protection
+# pcb-rescue_USBLC6-2SC6-Power_Protection-pcb-rescue
 #
-DEF pcb-rescue_USBLC6-2SC6-Power_Protection U 0 0 Y Y 1 F N
+DEF pcb-rescue_USBLC6-2SC6-Power_Protection-pcb-rescue U 0 0 Y Y 1 F N
 F0 "U" 200 350 50 H V C CNN
-F1 "pcb-rescue_USBLC6-2SC6-Power_Protection" 400 -400 50 H V C CNN
+F1 "pcb-rescue_USBLC6-2SC6-Power_Protection-pcb-rescue" 400 -400 50 H V C CNN
 F2 "Package_TO_SOT_SMD:SOT-23-6" -750 400 50 H I C CNN
 F3 "" 200 350 50 H I C CNN
 $FPLIST
@@ -800,11 +798,11 @@ X IO1 6 -500 100 200 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_USB_B_Micro-Connector
+# pcb-rescue_USB_B_Micro-Connector-pcb-rescue
 #
-DEF pcb-rescue_USB_B_Micro-Connector J 0 40 Y Y 1 F N
+DEF pcb-rescue_USB_B_Micro-Connector-pcb-rescue J 0 40 Y Y 1 F N
 F0 "J" -200 450 50 H V L CNN
-F1 "pcb-rescue_USB_B_Micro-Connector" -200 350 50 H V L CNN
+F1 "pcb-rescue_USB_B_Micro-Connector-pcb-rescue" -200 350 50 H V L CNN
 F2 "" 150 -50 50 H I C CNN
 F3 "" 150 -50 50 H I C CNN
 $FPLIST
@@ -835,11 +833,11 @@ X Shield 6 -100 -400 100 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# pcb-rescue_VBUS-power
+# pcb-rescue_VBUS-power-pcb-rescue
 #
-DEF pcb-rescue_VBUS-power #PWR 0 0 Y Y 1 F P
+DEF pcb-rescue_VBUS-power-pcb-rescue #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "pcb-rescue_VBUS-power" 0 150 50 H V C CNN
+F1 "pcb-rescue_VBUS-power-pcb-rescue" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -907,6 +905,21 @@ P 2 0 1 0 -30 50 0 100 N
 P 2 0 1 0 0 0 0 100 N
 P 2 0 1 0 0 100 30 50 N
 X +DRAM_VREF 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# symbols_+RTC
+#
+DEF symbols_+RTC #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "symbols_+RTC" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +RTC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #

@@ -5,8 +5,8 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 9 11
-Title ""
-Date ""
+Title "RhythmPocket"
+Date "2019-07-16"
 Rev "R0.1"
 Comp "ZephRay"
 Comment1 "zephray@outlook.com"
@@ -48,7 +48,7 @@ F 3 "" H 8900 5500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L pcb-rescue:GND-power #PWR0289
+L pcb-rescue:GND-power-pcb-rescue #PWR0289
 U 1 1 5D1F6AB8
 P 6700 4400
 F 0 "#PWR0289" H 6700 4150 50  0001 C CNN
@@ -100,7 +100,7 @@ NoConn ~ 3500 4500
 NoConn ~ 3500 4600
 NoConn ~ 1900 4500
 $Comp
-L pcb-rescue:GND-power #PWR0290
+L pcb-rescue:GND-power-pcb-rescue #PWR0290
 U 1 1 5D208234
 P 1800 2800
 F 0 "#PWR0290" H 1800 2550 50  0001 C CNN
