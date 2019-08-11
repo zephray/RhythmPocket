@@ -830,8 +830,6 @@ Wire Wire Line
 	4700 1200 4400 1200
 Connection ~ 4400 1200
 Wire Wire Line
-	4200 1100 4200 1200
-Wire Wire Line
 	4200 1200 4400 1200
 Wire Wire Line
 	4200 900  4400 900 
@@ -944,4 +942,6 @@ NoConn ~ 4400 3300
 NoConn ~ 4400 3500
 NoConn ~ 4400 3600
 NoConn ~ 4400 3700
+Wire Wire Line
+	4200 1000 4200 1200
 $EndSCHEMATC

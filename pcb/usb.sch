@@ -278,34 +278,8 @@ F 3 "" H 6100 3700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5300 3700 5500 3700
-$Comp
-L Device:R R605
-U 1 1 5D1E8958
-P 5650 3600
-F 0 "R605" V 5600 3850 50  0000 C CNN
-F 1 "47K" V 5600 3300 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5580 3600 50  0001 C CNN
-F 3 "~" H 5650 3600 50  0001 C CNN
-	1    5650 3600
-	0    -1   1    0   
-$EndComp
-$Comp
-L power:+3V3 #PWR0298
-U 1 1 5D1E9321
-P 6100 3600
-F 0 "#PWR0298" H 6100 3450 50  0001 C CNN
-F 1 "+3V3" H 6100 3750 50  0000 C CNN
-F 2 "" H 6100 3600 50  0001 C CNN
-F 3 "" H 6100 3600 50  0001 C CNN
-	1    6100 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 3600 6100 3600
 Wire Wire Line
 	5800 3700 6100 3700
-Wire Wire Line
-	5500 3600 5300 3600
 NoConn ~ 5300 4700
 NoConn ~ 5300 4800
 $Comp
@@ -521,5 +495,6 @@ NoConn ~ 5300 4000
 NoConn ~ 5300 4300
 NoConn ~ 5300 4500
 Text Notes 5400 4300 0    50   ~ 0
-The second USB is not present on iMX7 Solo.
+The second USB is not present on iMX7 Solo.\n(But the second USB LDO does present)
+NoConn ~ 5300 3600
 $EndSCHEMATC
