@@ -355,7 +355,7 @@ $EndComp
 NoConn ~ 9300 3400
 NoConn ~ 9300 3500
 $Comp
-L Device:L_Small L700
+L Device:L L700
 U 1 1 5D259B1C
 P 6550 3200
 F 0 "L700" V 6740 3200 50  0000 C CNN

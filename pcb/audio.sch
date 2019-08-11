@@ -784,7 +784,7 @@ Connection ~ 3500 3200
 Wire Wire Line
 	3800 3500 5000 3500
 $Comp
-L Device:L_Small L401
+L Device:L L401
 U 1 1 5D4971D8
 P 4200 2450
 F 0 "L401" H 4253 2496 50  0000 L CNN
@@ -795,7 +795,7 @@ F 3 "~" H 4200 2450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L_Small L400
+L Device:L L400
 U 1 1 5D4999E2
 P 3500 2450
 F 0 "L400" H 3553 2496 50  0000 L CNN

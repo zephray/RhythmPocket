@@ -93,7 +93,7 @@ U 1 1 5D2E55D4
 P 1600 4850
 F 0 "BT1" H 1708 4896 50  0000 L CNN
 F 1 "Battery" H 1708 4805 50  0000 L CNN
-F 2 "footprints:BatteryHolder_Keystone_5201_5223" V 1600 4910 50  0001 C CNN
+F 2 "footprints:BatteryHolder_Keystone_5204_5226" V 1600 4910 50  0001 C CNN
 F 3 "~" V 1600 4910 50  0001 C CNN
 	1    1600 4850
 	1    0    0    -1  
@@ -192,7 +192,7 @@ Wire Wire Line
 	2500 5150 3200 5150
 Connection ~ 2300 4650
 $Comp
-L Device:L_Small L1
+L Device:L L1
 U 1 1 5D2F2270
 P 2950 5350
 F 0 "L1" V 3140 5350 50  0000 C CNN
@@ -346,7 +346,7 @@ F 3 "~" H 5400 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L_Small L3
+L Device:L L3
 U 1 1 5D311C05
 P 5000 5000
 F 0 "L3" H 5053 5046 50  0000 L CNN
@@ -357,7 +357,7 @@ F 3 "~" H 5000 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:L_Small L2
+L Device:L L2
 U 1 1 5D312A2A
 P 4700 4800
 F 0 "L2" H 4753 4846 50  0000 L CNN
@@ -376,8 +376,6 @@ Wire Wire Line
 	4600 5050 4700 5050
 Wire Wire Line
 	4600 5150 5000 5150
-Wire Wire Line
-	4600 4850 5000 4850
 $Comp
 L Device:C C6
 U 1 1 5D31B955
@@ -389,9 +387,6 @@ F 3 "~" H 5800 4900 50  0001 C CNN
 	1    5800 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5400 4850 5000 4850
-Connection ~ 5000 4850
 Wire Wire Line
 	5800 4750 4600 4750
 $Comp
@@ -520,7 +515,7 @@ Wire Wire Line
 Wire Wire Line
 	6000 1900 6000 2000
 $Comp
-L Device:L_Small L5
+L Device:L L5
 U 1 1 5D330C85
 P 7050 1700
 F 0 "L5" V 7240 1700 50  0000 C CNN
@@ -590,7 +585,7 @@ L Device:C C12
 U 1 1 5D34452C
 P 7700 1850
 F 0 "C12" H 7815 1896 50  0000 L CNN
-F 1 "220pF" H 7815 1805 50  0000 L CNN
+F 1 "22pF" H 7815 1805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 7738 1700 50  0001 C CNN
 F 3 "~" H 7700 1850 50  0001 C CNN
 	1    7700 1850
@@ -984,7 +979,7 @@ Wire Wire Line
 Wire Wire Line
 	2400 1900 2400 2000
 $Comp
-L Device:L_Small L4
+L Device:L L4
 U 1 1 5D474768
 P 3450 1700
 F 0 "L4" V 3640 1700 50  0000 C CNN
@@ -1039,7 +1034,7 @@ L Device:C C9
 U 1 1 5D474784
 P 4100 1850
 F 0 "C9" H 4215 1896 50  0000 L CNN
-F 1 "220pF" H 4215 1805 50  0000 L CNN
+F 1 "22pF" H 4215 1805 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0402_1005Metric" H 4138 1700 50  0001 C CNN
 F 3 "~" H 4100 1850 50  0001 C CNN
 	1    4100 1850
@@ -1461,7 +1456,7 @@ F 3 "" H 6600 4150 50  0001 C CNN
 $EndComp
 Connection ~ 6600 4150
 $Comp
-L Device:L_Small L6
+L Device:L L6
 U 1 1 5D5F1F4C
 P 7250 4900
 F 0 "L6" V 7440 4900 50  0000 C CNN
@@ -2002,4 +1997,9 @@ F 3 "" H 7100 5400 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7100 5400 8900 5400
+Wire Wire Line
+	4600 4850 5000 4850
+Connection ~ 5000 4850
+Wire Wire Line
+	5000 4850 5400 4850
 $EndSCHEMATC
