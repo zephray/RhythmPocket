@@ -6,8 +6,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 10 11
 Title "RhythmPocket"
-Date "2019-07-16"
-Rev "R0.1"
+Date "2019-08-12"
+Rev "R0.2"
 Comp "ZephRay"
 Comment1 "zephray@outlook.com"
 Comment2 "www.zephray.me"
