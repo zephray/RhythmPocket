@@ -1,0 +1,409 @@
+#=============================================================================	
+# init script for i.MX7D 	LPDDR2
+#=============================================================================	
+# Revision History	
+#  1.2	
+#=============================================================================	
+	
+stop	# needed when using DS5 debugger, remove if not using a debugger
+	
+set semihosting enabled true	# needed when using DS5 debugger, remove if not using a debugger
+	
+memory 0x30000000 0x33FFFFFF noverify	# needed when using DS5 debugger, remove if not using a debugger
+#=============================================================================	
+# Processor Initialization (Clocks and IOMUX)	
+#=============================================================================	
+	
+memory set 0x30389800 32 0x10000000	
+memory set 0x30389880 32 0x10000001	
+memory set 0x30388000 32 0x11000000	
+memory set 0x30388080 32 0x11000000	
+memory set 0x30388100 32 0x11000000	
+memory set 0x30388800 32 0x11000000	
+memory set 0x30388880 32 0x11000000	
+memory set 0x30388900 32 0x11000000	
+memory set 0x30388980 32 0x11000000	
+memory set 0x30389000 32 0x11000001	
+memory set 0x3038a000 32 0x11000000	
+memory set 0x3038a080 32 0x11000000	
+memory set 0x3038a100 32 0x11000000	
+memory set 0x3038a180 32 0x11000000	
+memory set 0x3038a200 32 0x11000000	
+memory set 0x3038a280 32 0x11000000	
+memory set 0x3038a300 32 0x11000003	
+memory set 0x3038a380 32 0x11000001	
+memory set 0x3038a400 32 0x11000001	
+memory set 0x3038a480 32 0x10000000	
+memory set 0x3038a500 32 0x11000001	
+memory set 0x3038a580 32 0x11000001	
+memory set 0x3038a600 32 0x11000001	
+memory set 0x3038a680 32 0x11000001	
+memory set 0x3038a700 32 0x11000000	
+memory set 0x3038a780 32 0x11000000	
+memory set 0x3038a800 32 0x11000000	
+memory set 0x3038a880 32 0x11000000	
+memory set 0x3038a900 32 0x11000000	
+memory set 0x3038a980 32 0x11000000	
+memory set 0x3038aa00 32 0x11000000	
+memory set 0x3038aa80 32 0x11000000	
+memory set 0x3038ab00 32 0x11000001	
+memory set 0x3038ab80 32 0x11000001	
+memory set 0x3038ac00 32 0x11000001	
+memory set 0x3038ac80 32 0x11000001	
+memory set 0x3038ad00 32 0x11000001	
+memory set 0x3038ad80 32 0x11000001	
+memory set 0x3038ae00 32 0x11000001	
+memory set 0x3038ae80 32 0x11000001	
+memory set 0x3038af00 32 0x11000001	
+memory set 0x3038af80 32 0x11000002	
+memory set 0x3038b000 32 0x11000002	
+memory set 0x3038b080 32 0x11000002	
+memory set 0x3038b100 32 0x11000002	
+memory set 0x3038b180 32 0x11000002	
+memory set 0x3038b200 32 0x11000002	
+memory set 0x3038b280 32 0x11000002	
+memory set 0x3038b300 32 0x11000002	
+memory set 0x3038b380 32 0x11000002	
+memory set 0x3038b400 32 0x11000002	
+memory set 0x3038b480 32 0x11000002	
+memory set 0x3038b500 32 0x11000001	
+memory set 0x3038b580 32 0x11000001	
+memory set 0x3038b600 32 0x11000001	
+memory set 0x3038b680 32 0x11000001	
+memory set 0x3038b700 32 0x11000001	
+memory set 0x3038b780 32 0x11000001	
+memory set 0x3038b800 32 0x11000001	
+memory set 0x3038b880 32 0x11000001	
+memory set 0x3038b900 32 0x11000000	
+memory set 0x3038b980 32 0x11000000	
+memory set 0x3038ba00 32 0x11000000	
+memory set 0x3038ba80 32 0x11000000	
+memory set 0x3038bb00 32 0x11000000	
+memory set 0x3038bb80 32 0x11000001	
+memory set 0x3038bc00 32 0x11000000	
+memory set 0x3038bc80 32 0x11000000	
+memory set 0x3038bd00 32 0x11000000	
+memory set 0x3038bd80 32 0x11000000	
+memory set 0x3038be00 32 0x11000000	
+	
+memory set 0x30360070 32 0x0060302c	
+	
+memory set 0x30384000 32 0x00000002	
+memory set 0x30384010 32 0x00000002	
+memory set 0x30384020 32 0x00000002	
+memory set 0x30384030 32 0x00000002	
+memory set 0x30384040 32 0x00000002	
+memory set 0x30384050 32 0x00000002	
+memory set 0x30384060 32 0x00000002	
+memory set 0x30384070 32 0x00000002	
+memory set 0x30384080 32 0x00000002	
+memory set 0x30384090 32 0x00000002	
+memory set 0x303840A0 32 0x00000002	
+memory set 0x303840B0 32 0x00000002	
+memory set 0x303840C0 32 0x00000002	
+memory set 0x303840D0 32 0x00000002	
+memory set 0x303840E0 32 0x00000002	
+memory set 0x303840F0 32 0x00000002	
+memory set 0x30384100 32 0x00000002	
+memory set 0x30384110 32 0x00000002	
+memory set 0x30384120 32 0x00000002	
+memory set 0x30384130 32 0x00000002	
+memory set 0x30384140 32 0x00000002	
+memory set 0x30384150 32 0x00000002	
+memory set 0x30384160 32 0x00000002	
+memory set 0x30384170 32 0x00000002	
+memory set 0x30384180 32 0x00000002	
+memory set 0x30384190 32 0x00000002	
+memory set 0x303841A0 32 0x00000002	
+memory set 0x303841B0 32 0x00000002	
+memory set 0x303841C0 32 0x00000002	
+memory set 0x303841D0 32 0x00000002	
+memory set 0x303841E0 32 0x00000002	
+memory set 0x303841F0 32 0x00000002	
+memory set 0x30384200 32 0x00000002	
+memory set 0x30384210 32 0x00000002	
+memory set 0x30384220 32 0x00000002	
+memory set 0x30384230 32 0x00000002	
+memory set 0x30384240 32 0x00000002	
+memory set 0x30384250 32 0x00000002	
+memory set 0x30384260 32 0x00000002	
+memory set 0x30384270 32 0x00000002	
+memory set 0x30384280 32 0x00000002	
+memory set 0x30384290 32 0x00000002	
+memory set 0x303842A0 32 0x00000002	
+memory set 0x303842B0 32 0x00000002	
+memory set 0x303842C0 32 0x00000002	
+memory set 0x303842D0 32 0x00000002	
+memory set 0x303842E0 32 0x00000002	
+memory set 0x303842F0 32 0x00000002	
+memory set 0x30384300 32 0x00000002	
+memory set 0x30384310 32 0x00000002	
+memory set 0x30384320 32 0x00000002	
+memory set 0x30384330 32 0x00000002	
+memory set 0x30384340 32 0x00000002	
+memory set 0x30384350 32 0x00000002	
+memory set 0x30384360 32 0x00000002	
+memory set 0x30384370 32 0x00000002	
+memory set 0x30384380 32 0x00000002	
+memory set 0x30384390 32 0x00000002	
+memory set 0x303843A0 32 0x00000002	
+memory set 0x303843B0 32 0x00000002	
+memory set 0x303843C0 32 0x00000002	
+memory set 0x303843D0 32 0x00000002	
+memory set 0x303843E0 32 0x00000002	
+memory set 0x303843F0 32 0x00000002	
+memory set 0x30384400 32 0x00000002	
+memory set 0x30384410 32 0x00000002	
+memory set 0x30384420 32 0x00000002	
+memory set 0x30384430 32 0x00000002	
+memory set 0x30384440 32 0x00000002	
+memory set 0x30384450 32 0x00000002	
+memory set 0x30384460 32 0x00000002	
+memory set 0x30384470 32 0x00000002	
+memory set 0x30384480 32 0x00000002	
+memory set 0x30384490 32 0x00000002	
+memory set 0x303844A0 32 0x00000002	
+memory set 0x303844B0 32 0x00000002	
+memory set 0x303844C0 32 0x00000002	
+memory set 0x303844D0 32 0x00000002	
+memory set 0x303844E0 32 0x00000002	
+memory set 0x303844F0 32 0x00000002	
+memory set 0x30384500 32 0x00000002	
+memory set 0x30384510 32 0x00000002	
+memory set 0x30384520 32 0x00000002	
+memory set 0x30384530 32 0x00000002	
+memory set 0x30384540 32 0x00000002	
+memory set 0x30384550 32 0x00000002	
+memory set 0x30384560 32 0x00000002	
+memory set 0x30384570 32 0x00000002	
+memory set 0x30384580 32 0x00000002	
+memory set 0x30384590 32 0x00000002	
+memory set 0x303845A0 32 0x00000002	
+memory set 0x303845B0 32 0x00000002	
+memory set 0x303845C0 32 0x00000002	
+memory set 0x303845D0 32 0x00000002	
+memory set 0x303845E0 32 0x00000002	
+memory set 0x303845F0 32 0x00000002	
+memory set 0x30384600 32 0x00000002	
+memory set 0x30384610 32 0x00000002	
+memory set 0x30384620 32 0x00000002	
+memory set 0x30384630 32 0x00000002	
+memory set 0x30384640 32 0x00000002	
+memory set 0x30384650 32 0x00000002	
+memory set 0x30384660 32 0x00000002	
+memory set 0x30384670 32 0x00000002	
+memory set 0x30384680 32 0x00000002	
+memory set 0x30384690 32 0x00000002	
+memory set 0x303846A0 32 0x00000002	
+memory set 0x303846B0 32 0x00000002	
+memory set 0x303846C0 32 0x00000002	
+memory set 0x303846D0 32 0x00000002	
+memory set 0x303846E0 32 0x00000002	
+memory set 0x303846F0 32 0x00000002	
+memory set 0x30384700 32 0x00000002	
+memory set 0x30384710 32 0x00000002	
+memory set 0x30384720 32 0x00000002	
+memory set 0x30384730 32 0x00000002	
+memory set 0x30384740 32 0x00000002	
+memory set 0x30384750 32 0x00000002	
+memory set 0x30384760 32 0x00000002	
+memory set 0x30384770 32 0x00000002	
+memory set 0x30384780 32 0x00000002	
+memory set 0x30384790 32 0x00000002	
+memory set 0x303847A0 32 0x00000002	
+memory set 0x303847B0 32 0x00000002	
+memory set 0x303847C0 32 0x00000002	
+memory set 0x303847D0 32 0x00000002	
+memory set 0x303847E0 32 0x00000002	
+memory set 0x303847F0 32 0x00000002	
+memory set 0x30384800 32 0x00000002	
+memory set 0x30384810 32 0x00000002	
+memory set 0x30384820 32 0x00000002	
+memory set 0x30384830 32 0x00000002	
+memory set 0x30384840 32 0x00000002	
+memory set 0x30384850 32 0x00000002	
+memory set 0x30384860 32 0x00000002	
+memory set 0x30384870 32 0x00000002	
+memory set 0x30384880 32 0x00000002	
+memory set 0x30384890 32 0x00000002	
+memory set 0x303848A0 32 0x00000002	
+memory set 0x303848B0 32 0x00000002	
+memory set 0x303848C0 32 0x00000002	
+memory set 0x303848D0 32 0x00000002	
+memory set 0x303848E0 32 0x00000002	
+memory set 0x303848F0 32 0x00000002	
+memory set 0x30384900 32 0x00000002	
+memory set 0x30384910 32 0x00000002	
+memory set 0x30384920 32 0x00000002	
+memory set 0x30384930 32 0x00000002	
+memory set 0x30384940 32 0x00000002	
+memory set 0x30384950 32 0x00000002	
+memory set 0x30384960 32 0x00000002	
+memory set 0x30384970 32 0x00000002	
+memory set 0x30384980 32 0x00000002	
+memory set 0x30384990 32 0x00000002	
+memory set 0x303849A0 32 0x00000002	
+memory set 0x303849B0 32 0x00000002	
+memory set 0x303849C0 32 0x00000002	
+memory set 0x303849D0 32 0x00000002	
+memory set 0x303849E0 32 0x00000002	
+memory set 0x303849F0 32 0x00000002	
+memory set 0x30384A00 32 0x00000002	
+memory set 0x30384A10 32 0x00000002	
+memory set 0x30384A20 32 0x00000002	
+memory set 0x30384A30 32 0x00000002	
+memory set 0x30384A40 32 0x00000002	
+memory set 0x30384A50 32 0x00000002	
+memory set 0x30384A60 32 0x00000002	
+memory set 0x30384A70 32 0x00000002	
+memory set 0x30384A80 32 0x00000002	
+memory set 0x30384A90 32 0x00000002	
+memory set 0x30384AA0 32 0x00000002	
+memory set 0x30384AB0 32 0x00000002	
+memory set 0x30384AC0 32 0x00000002	
+memory set 0x30384AD0 32 0x00000002	
+memory set 0x30384AE0 32 0x00000002	
+memory set 0x30384AF0 32 0x00000002	
+memory set 0x30384B00 32 0x00000002	
+memory set 0x30384B10 32 0x00000002	
+memory set 0x30384B20 32 0x00000002	
+memory set 0x30384B30 32 0x00000002	
+memory set 0x30384B40 32 0x00000002	
+memory set 0x30384B50 32 0x00000002	
+memory set 0x30384B60 32 0x00000002	
+memory set 0x30384B70 32 0x00000002	
+memory set 0x30384B80 32 0x00000002	
+memory set 0x30384B90 32 0x00000002	
+memory set 0x30384BA0 32 0x00000002	
+memory set 0x30384BB0 32 0x00000002	
+memory set 0x30384BC0 32 0x00000002	
+memory set 0x30384BD0 32 0x00000002	
+memory set 0x30384BE0 32 0x00000002	
+memory set 0x30384BF0 32 0x00000002	
+	
+memory set 0x30380800 32 0x00000002	
+memory set 0x30380810 32 0x00000002	
+memory set 0x30380820 32 0x00000002	
+memory set 0x30380830 32 0x00000002	
+memory set 0x30380840 32 0x00000002	
+memory set 0x30380850 32 0x00000002	
+memory set 0x30380860 32 0x00000002	
+memory set 0x30380870 32 0x00000002	
+memory set 0x30380880 32 0x00000002	
+memory set 0x30380890 32 0x00000002	
+memory set 0x303808A0 32 0x00000002	
+memory set 0x303808B0 32 0x00000002	
+memory set 0x303808C0 32 0x00000002	
+memory set 0x303808D0 32 0x00000002	
+memory set 0x303808E0 32 0x00000002	
+memory set 0x303808F0 32 0x00000002	
+memory set 0x30380900 32 0x00000002	
+memory set 0x30380910 32 0x00000002	
+memory set 0x30380920 32 0x00000002	
+memory set 0x30380930 32 0x00000002	
+memory set 0x30380940 32 0x00000002	
+memory set 0x30380950 32 0x00000002	
+memory set 0x30380960 32 0x00000002	
+memory set 0x30380970 32 0x00000002	
+memory set 0x30380980 32 0x00000002	
+memory set 0x30380990 32 0x00000002	
+memory set 0x303809A0 32 0x00000002	
+memory set 0x303809B0 32 0x00000002	
+memory set 0x303809C0 32 0x00000002	
+memory set 0x303809D0 32 0x00000002	
+memory set 0x303809E0 32 0x00000002	
+memory set 0x303809F0 32 0x00000002	
+memory set 0x30380A00 32 0x00000002	
+	                   
+# Enable OCRAM EPDC	                   
+memory set 0x30340004 32 0x4F400005	
+	
+#=============================================================================	
+# DDR Controller Registers	
+#=============================================================================	
+# Memory type:	LPDDR2
+# Manufacturer:	Micron
+# Device Part Number:	Micron LPDDR2
+# Clock Freq.: 	533MHz
+# Density per CS in Gb: 	2
+# Chip Selects used:	1
+# Number of Banks:	8
+# Row address:    	14
+# Column address: 	10
+# Data bus width:	16
+# ROW-BANK interleave:	ENABLED
+#=============================================================================	
+	
+memory set 0x30391000 32 0x00000002	# deassert presetn
+memory set 0x307A0000 32 0x01021004	# DDRC_MSTR
+memory set 0x307A0064 32 0x00200023	# DDRC_RFSHTMG
+memory set 0x307a0490 32 0x00000001	# DDRC_PCTRL_0
+#memory set 0x307A00D4 32 0x00010000	# DDRC_INIT1 (if using LPDDR3/LPDDR2, this line is automatically commented out)
+memory set 0x307A00D0 32 0x00350001	# DDRC_INIT0
+memory set 0x307A00D8 32 0x00001105	# DDRC_INIT2  (if using DDR3 this line is automatically commented out) 
+memory set 0x307A00DC 32 0x00C20006	# DDRC_INIT3
+memory set 0x307A00E0 32 0x00020000	# DDRC_INIT4
+memory set 0x307A00E4 32 0x00110006	# DDRC_INIT5
+memory set 0x307A00F4 32 0x0000033F	# DDRC_RANKCTL
+memory set 0x307A0100 32 0x080E110B	# DDRC_DRAMTMG0
+memory set 0x307A0104 32 0x00020211	# DDRC_DRAMTMG1
+memory set 0x307A0108 32 0x02040706	# DDRC_DRAMTMG2
+memory set 0x307A010C 32 0x00504000	# DDRC_DRAMTMG3
+memory set 0x307A0110 32 0x05010307	# DDRC_DRAMTMG4
+memory set 0x307A0114 32 0x02020404	# DDRC_DRAMTMG5
+memory set 0x307A0118 32 0x02020003	# DDRC_DRAMTMG6
+memory set 0x307A011C 32 0x00000202	# DDRC_DRAMTMG7
+memory set 0x307A0120 32 0x00000202	# DDRC_DRAMTMG8
+memory set 0x307A0180 32 0x20600018	# DDRC_ZQCTL0
+memory set 0x307A0184 32 0x00E00100	# DDRC_ZQCTL1
+memory set 0x307A0190 32 0x02098203	# DDRC_DFITMG0
+memory set 0x307A0194 32 0x00060303	# DDRC_DFITMG1
+memory set 0x307A01A0 32 0x80400003	# DDRC_DFIUPD0
+memory set 0x307A01A4 32 0x00100020	# DDRC_DFIUPD1
+memory set 0x307A01A8 32 0x80100004	# DDRC_DFIUPD2
+memory set 0x307A0200 32 0x0000001F	# DDRC_ADDRMAP0
+memory set 0x307A0204 32 0x00070707	# DDRC_ADDRMAP1
+memory set 0x307A020C 32 0x0F000000	# DDRC_ADDRMAP3
+memory set 0x307A0210 32 0x00000F0F	# DDRC_ADDRMAP4
+memory set 0x307A0214 32 0x06060606	# DDRC_ADDRMAP5
+memory set 0x307A0218 32 0x0F0F0606	# DDRC_ADDRMAP6
+memory set 0x307A0240 32 0x06000600	# DDRC_ODTCFG
+memory set 0x307A0244 32 0x00000000	# DDRC_ODTMAP
+	
+#=============================================================================	
+# PHY Control Registers	
+#=============================================================================	
+	
+memory set 0x30391000 32 0x00000000	# deassert presetn
+memory set 0x30790000 32 0x17421640	# DDR_PHY_PHY_CON0
+memory set 0x30790004 32 0x10210100	# DDR_PHY_PHY_CON1
+memory set 0x30790008 32 0x00010000	# DDR_PHY_PHY_CON2 (if using DDR3 this line is automatically commented out) 
+memory set 0x30790010 32 0x00050408	# DDR_PHY_PHY_CON4
+memory set 0x307900B0 32 0x1010007E	# DDR_PHY_MDLL_CON0 
+memory set 0x3079001C 32 0x01010000	# DDR_PHY_PHY_RODT_CON0 (if using DDR3 this line is automatically commented out) 
+memory set 0x3079009C 32 0x00000D6E	# DDR_PHY_DRVDS_CON0
+ 	
+#memory set 0x30790078 32 0x00000001	# DDR_PHY_WR_LVL_CON3 - Optional write leveling resync enable, uncomment to invoke
+#memory set 0x3079006C 32 0x00000000	# DDR_PHY_WR_LVL_CON0 - Optional write leveling values for each byte lane, uncomment to invoke
+#memory set 0x30790078 32 0x00000000	# DDR_PHY_WR_LVL_CON3 - Optional write leveling resync disable, uncomment to invoke 
+ 	
+memory set 0x30790030 32 0x06060606	# DDR_PHY_OFFSET_WR_CON0
+memory set 0x30790020 32 0x0A0A0A0A	# DDR_PHY_OFFSET_RD_CON0
+memory set 0x30790050 32 0x01000008	# DDR_PHY_OFFSETD_CON0
+memory set 0x30790050 32 0x00000008	# DDR_PHY_OFFSETD_CON0
+memory set 0x30790018 32 0x0000000F	# DDR_PHY_LP_CON0
+memory set 0x307900C0 32 0x0E487304	# DDR_PHY_ZQ_CON0 - Start Manual ZQ
+memory set 0x307900C0 32 0x0E4C7304	
+memory set 0x307900C0 32 0x0E4C7306	
+# 	<= NOTE: Depending on JTAG device used, may need ~ 7 us pause at this point.
+memory set 0x307900C0 32 0x0E487304	# DDR_PHY_ZQ_CON0 - End Manual ZQ
+	
+	
+#=============================================================================	
+# Final Initialization start sequence	
+#=============================================================================	
+	
+memory set 0x30384130 32 0x00000000	#Disable Clock
+memory set 0x30340020 32 0x00000178	# IOMUX_GRP_GRP8 - Start input to PHY
+memory set 0x30384130 32 0x00000002	#Enable Clock
+#	<= NOTE: Depending on JTAG device used, may need ~ 250 us pause at this point.
